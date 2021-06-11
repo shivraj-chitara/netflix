@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .showcase::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
+        box-shadow: inset 0px 30px 40px #000000, inset -0px -20px 50px #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="w-full text-white bg-black m-auto">
+      <header
+        class="
+          h-auto
+          relative
+          showcase
+          bg-cover bg-center
+          border-b-8 border-gray-800
+        "
+        style="background-image: url(./img/main-page.jpg)"
+      >
+        <!-- top -->
+        <div class="relative py-10 z-20">
+          <img
+            src="./img/Netflix-logo.svg"
+            class="w-20 md:w-32 absolute top-1/2 left-8"
+            alt=""
+          />
+
+          <div class="absolute top-1/2 right-8">
+            <select
+              class="
+                text-sm
+                px-1
+                md:px-2
+                py-0.5
+                md:py-1.5
+                bg-black
+                border-white border
+                rounded-sm
+                md:mr-6
+                mr-2
+              "
+            >
+              <option value="">English</option>
+              <option value="">Hindi</option>
+            </select>
+            <a
+              href="#"
+              class="
+                bg-red-600
+                rounded-sm
+                text-white
+                px-2
+                md:px-4
+                py-0.5
+                md:py-1.5
+                inline-block
+              "
+            >
+              Sign In
+            </a>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="h-auto lg:my-24">
+          <div
+            class="
+              relative
+              h-full
+              flex flex-col
+              items-center
+              justify-center
+              w-4/5
+              md:w-2/3
+              m-auto
+              z-20
+              text-center
+              py-20
+            "
+          >
+            <h1 class="text-2xl sm:text-6xl font-bold py-2 leading-5">
+              Unlimited movies, TV <br />
+              shows and more.
+            </h1>
+            <p class="subtitle font-semibold py-4">
+              Watch anywhere. Cancel anytime.
+            </p>
+
+            <p class="text-md md:text-lg pb-4">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <div
+              class="
+                flex flex-col
+                lg:flex-row
+                justify-center
+                w-full
+                items-center
+                lg:items-stretch
+              "
+            >
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Email Address"
+                class="p-3 lg:p-4 w-full lg:w-2/3 rounded-sm text-black"
+              />
+              <a
+                href="#"
+                class="
+                  bg-red-600
+                  flex
+                  justify-center
+                  items-center
+                  text-md
+                  lg:text-2xl
+                  lg:font-semibold
+                  max-w-full
+                  px-2
+                  mt-5
+                  lg:mt-0
+                  py-1.5
+                  rounded-sm
+                "
+              >
+                Get Started
+                <img src="./img/arrow.svg" class="w-4 lg:w-6" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- tv section -->
+
+      <div
+        class="
+          w-full
+          grid
+          lg:grid-cols-2
+          items-center
+          justify-center
+          text-center
+          lg:text-left
+          lg:px-20
+          px-8
+          py-10
+          border-b-8 border-gray-800
+        "
+      >
+        <!-- tv para -->
+        <div class="px-5">
+          <h1 class="title">Enjoy on your TV.</h1>
+          <p class="subtitle pt-3">
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
+        </div>
+
+        <!-- tv img -->
+        <div class="w-full relative overflow-hidden">
+          <img src="./img/tv.png" class="relative z-20 w-full" alt="" />
+          <div class="w-9/10 h-11/20 left-1/20 absolute top-1/5">
+            <video
+              autoplay=""
+              playsinline=""
+              muted=""
+              loop=""
+              class="w-full h-full"
+            >
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- show sction -->
+      <div
+        class="
+          w-full
+          grid
+          lg:grid-cols-2
+          items-center
+          text-center
+          lg:text-left
+          justify-between
+          px-8
+          lg:px-16
+          py-10
+          border-b-8 border-gray-800
+        "
+      >
+        <!-- show img -->
+        <div class="w-full relative order-last lg:order-first">
+          <img src="./img/mobile.jpg" class="h-auto w-full" alt="" />
+
+          <!-- card -->
+          <div
+            class="
+              flex
+              border-2 border-gray-800
+              rounded-xl
+              justify-between
+              items-center
+              w-3/4
+              lg:w-2/3
+              h-auto
+              md:h-24
+              p-1
+              px-3
+              sm:p-3
+              absolute
+              bottom-3
+              sm:bottom-1/20
+              left-1/8
+              lg:left-1/6
+              bg-black
+            "
+          >
+            <div class="flex h-full items-center">
+              <img src="./img/Stranger.png" class="relative h-12 pr-5" alt="" />
+              <div>
+                <p class="text-xs sm:text-base font-bold">Stranger Things</p>
+                <p class="text-xs sm:text-base text-blue-600">
+                  Downloading....
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="./img/download-icon.gif" class="h-14" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- show para -->
+        <div class="lg:pl-12">
+          <h1 class="title">Download your shows to watch offline.</h1>
+          <p class="subtitle">
+            Save your favourites easily and always have something to watch.
+          </p>
+        </div>
+      </div>
+
+      <!-- Watch everything -->
+      <div
+        class="
+          grid
+          lg:grid-cols-2
+          lg:px-20
+          px-8
+          items-center
+          lg:text-left
+          text-center
+          py-10
+          border-b-8 border-gray-800
+        "
+      >
+        <!-- para -->
+        <div class="lg:pr-10 px-3">
+          <h1 class="title">Watch Everwhere</h1>
+          <p class="subtitle">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
+
+        <!-- img -->
+        <div class="relative w-full">
+          <img
+            src="./img/device-pile.png"
+            class="relative w-full m-auto z-20"
+            alt=""
+          />
+          <div class="absolute w-3/5 h-1/2 top-1/20 left-1/5 z-10">
+            <video
+              class="w-full h-full"
+              autoplay=""
+              playsinline=""
+              muted=""
+              loop=""
+            >
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- children -->
+      <div
+        class="
+          grid
+          lg:grid-cols-2
+          items-center
+          text-center
+          lg:text-left
+          py-10
+          lg:px-20
+          px-8
+          border-b-8 border-gray-800
+        "
+      >
+        <!-- img -->
+        <div class="order-last lg:order-first">
+          <img src="./img/children.png" alt="" />
+        </div>
+
+        <!-- para -->
+        <div class="lg:pl-12">
+          <h1 class="title py-5">Create profiles for children.</h1>
+          <p class="subtitle">
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </p>
+        </div>
+      </div>
+
+      <!-- question page -->
+      <div class="sm:w-4/5 m-auto my-8">
+        <h1
+          class="text-4xl lg:text-5xl font-bold text-center px-5 py-5 lg:my-10"
+        >
+          Frequently Asked Questions
+        </h1>
+        <!-- ques card container -->
+        <div class="w-full" id="questionContainer">
+          <!-- question -->
+        </div>
+      </div>
+
+      <div class="py-20 border-b-8 border-gray-800">
+        <p class="lg:text-xl w-4/5 pb-5 m-auto text-center">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div
+          class="
+            flex flex-col
+            lg:flex-row
+            justify-center
+            sm:w-3/5
+            w-4/5
+            m-auto
+            items-center
+            lg:items-stretch
+          "
+        >
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Email Address"
+            class="p-3 lg:p-4 w-full lg:w-2/3 rounded-sm text-black"
+          />
+          <a
+            href="#"
+            class="
+              bg-red-600
+              flex
+              justify-center
+              items-center
+              text-md
+              lg:text-2xl
+              lg:font-semibold
+              max-w-full
+              px-2
+              mt-5
+              lg:mt-0
+              py-1.5
+              rounded-sm
+            "
+          >
+            Get Started
+            <img src="./img/arrow.svg" class="w-4 lg:w-6" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="w-4/5 m-auto pt-10" style="color: #757575">
+        <div>
+          <p class="py-5">Questions? Call 000-800-040-1843</p>
+        </div>
+
+        <!-- links -->
+        <div>
+          <ul
+            class="
+              grid
+              gap-0
+              m-0
+              grid-cols-2
+              sm:grid-cols-3
+              md:grid-cols-4
+              text-sm
+            "
+          >
+            <li class="link">FAQ</li>
+            <li class="link">Investor Relations</li>
+            <li class="link">Privacy</li>
+            <li class="link">Speed Test</li>
+
+            <li class="link">Help Center</li>
+            <li class="link">Jobs</li>
+            <li class="link">Cookie Preferences</li>
+            <li class="link">Legal Notice</li>
+
+            <li class="link">Accounts</li>
+            <li class="link">Ways to Watch</li>
+            <li class="link">Corporate Information</li>
+            <li class="link">Netflix Originals</li>
+
+            <li class="link">Media Centre</li>
+            <li class="link">Terms of Use</li>
+            <li class="link">Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="my-5">
+          <select
+            class="
+              bg-black
+              text-gray-600
+              font-semibold
+              border-gray-600 border
+              py-3
+              px-5
+              rounded-sm
+            "
+            name=""
+            id=""
+          >
+            <option value="">English</option>
+            <option value="">Hindi</option>
+          </select>
+        </div>
+        <p class="text-sm pb-5">Netflix India</p>
+      </footer>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
